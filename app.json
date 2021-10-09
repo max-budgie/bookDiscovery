@@ -1,0 +1,12 @@
+{
+  "name": "book-discovery",
+  "displayName": "book-discovery",
+  "expo": {
+    "name": "book-discovery",
+    "slug": "book-discovery",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
