@@ -1,6 +1,10 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "moduleResolution": "node",
+    "lib": ["es6"],
+    "jsx": "react-native",
+    "baseUrl": "src"
   }
 }
