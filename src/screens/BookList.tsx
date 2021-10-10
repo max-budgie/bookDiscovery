@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, FlatList, TouchableOpacity, SafeAreaView, StyleSheet, Image } from 'react-native';
+import { View, FlatList, TouchableOpacity, SafeAreaView, StyleSheet, Image, StatusBar, Platform } from 'react-native';
 import { Text } from 'react-native-elements';
 import Spinner from 'react-native-loading-spinner-overlay';
 import { BookApi } from '../api';
@@ -48,6 +48,7 @@ export const BookList = ({ navigation, route }: Props) => {
   return (
     <SafeAreaView style={styles.externalContainer}>
       <Spinner visible={isLoading} />
+      {Platform.OS === 'android' && <View style={{ height: 24 }} />}
       <Input
         returnKeyType="search"
         enablesReturnKeyAutomatically
